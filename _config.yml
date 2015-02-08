@@ -1,0 +1,22 @@
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
+
+# Setup
+title:            Engineers Without Borders
+tagline:          University of Illinois at Urbana-Champaign Chapter
+url:              http://ewb-usa-uiuc.org/
+paginate:         1
+baseurl:          /
+paginate:            7
+paginate_path:       "blog/page:num/"
+paginate_base:       "/blog/"
+author:
+  name:           Joseph Milla
+  url:            https://twitter.com/josephmilla
+  email:          jmilla@acm.org
+
+# Custom vars
+version:          1.0.0
+github:
+  repo:           https://github.com/ewb-uiuc
