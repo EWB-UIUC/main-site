@@ -39,19 +39,47 @@ Engineers Without Borders promotes community-driven engineering projects fostere
 
 <div id="join" class="jumbotron jumbotron-custom">
   <h1>Join</h1>
-  <h2>Engineers</h2>
+  <!-- <h2>Engineers</h2>
 
   Jill McClary- EWB President 2012 “I joined EWB during my freshman year because I wanted to use my education to make a difference.  By being involved in this organization throughout my four years at Illinois, I made some of my best college friends, learned how to manage and implement projects through real-world experiences, and discovered a passion for research that has significantly influenced my post-graduation professional plans.  Overall, EWB was a fantastic way to spend my undergraduate years, and I wouldn’t change a minute of it!”
 
   <h2>Non-Engineers</h2>
 
-  Patrick Walsh- former EWB member, Founder of Greenlight Planet - “I was a physics major interested in basic science, not engineering, before I started working with Engineers Without Borders.  EWB forced us to confront realities of the developing world first hand.  We learned, often the hard way, what it takes to execute effective solutions to unfamiliar problems.    EWB was a transformative experience, and the perfect incubator for Greenlight Planet Inc., a company I created in college to offer a solar-powered alternative to kerosene lighting.  Five years later, millions of people in India and Africa use Greenlight’s solar lanterns.  EWB was the beginning.”
+  Patrick Walsh- former EWB member, Founder of Greenlight Planet - “I was a physics major interested in basic science, not engineering, before I started working with Engineers Without Borders.  EWB forced us to confront realities of the developing world first hand.  We learned, often the hard way, what it takes to execute effective solutions to unfamiliar problems.    EWB was a transformative experience, and the perfect incubator for Greenlight Planet Inc., a company I created in college to offer a solar-powered alternative to kerosene lighting.  Five years later, millions of people in India and Africa use Greenlight’s solar lanterns.  EWB was the beginning.” -->
+
+  <!-- Change the width and height values to suit you best -->
+  <div class="typeform-widget" data-url="https://josephmilla.typeform.com/to/bhrwPB" data-text="EWB Registration" style="width:100%;height:600px;"></div>
+  <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
+
+</div>
+
+<div id="blog" class="jumbotron jumbotron-custom">
+  <h1>Blog</h1>
+  <h3>Latest blog posts</h3>
+  <div class="posts">
+    {% for post in site.posts limit:3 %}
+      <div class="post">
+        <h1 class="post-title">
+          <a href="{{ post.url }}">
+            {{ post.title }}
+          </a>
+        </h1>
+
+        <span class="post-date">{{ post.date | date_to_string }}</span>
+
+        {% if post.content.size > 30 %}
+          {{ post.content | strip_html | truncatewords: 30 }}
+        {% else %}
+          {{ post.content }}
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+  <h4>See more</h4>
 </div>
 
 <div id="contact" class="jumbotron jumbotron-custom">
   <h1>Contact</h1>
 </div>
 
-<div id="blog" class="jumbotron jumbotron-custom">
-</div>
 </center>
