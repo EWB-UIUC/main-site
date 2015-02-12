@@ -23,6 +23,16 @@
 //   NProgress.done();
 // });
 
+$(document).ready(function() {
+
+    // page is now ready, initialize the calendar...
+
+    $('#calendar').fullCalendar({
+        // put your options and callbacks here
+    })
+
+});
+
 $(function() {
   $('ul.nav a').bind('click',function(event) {
     var $anchor = $(this);
