@@ -97,3 +97,18 @@ h1 .small, h2 .small, h3 .small, h4 .small, h5 .small, h6 .small,
   border-radius: 50px;
   padding: 3px !important;
 }
+
+.footer {
+  background-color: #333333;
+  color: #FFFFFF;
+  width: 100%;
+  height: 200px;
+}
+
+.footer a {
+  color: #FFFFFF;
+}
+
+.footer a:hover, .footer a:focus {
+  opacity: 0.80;
+}
