@@ -4,13 +4,40 @@
  <title>Engineers Without Borders</title>
  <link href="http://ewb-usa-uiuc.org//atom.xml" rel="self"/>
  <link href="http://ewb-usa-uiuc.org//"/>
- <updated>2015-02-14T16:49:55-06:00</updated>
+ <updated>2015-02-14T17:01:54-06:00</updated>
  <id>http://ewb-usa-uiuc.org/</id>
  <author>
    <name>Joseph Milla</name>
    <email>jmilla@acm.org</email>
  </author>
 
+ 
+ <entry>
+   <title>Introducing the 2015 Board Members</title>
+   <link href="http://ewb-usa-uiuc.org///2015/02/14/introducing-2015-board/"/>
+   <updated>2015-02-14T00:00:00-06:00</updated>
+   <id>http://ewb-usa-uiuc.org//2015/02/14/introducing-2015-board</id>
+   <content type="html">&lt;h1 id=&quot;board&quot;&gt;2015 Board&lt;/h1&gt;
+
+&lt;h2 id=&quot;president&quot;&gt;President&lt;/h2&gt;
+&lt;p&gt;Ayzvara Suntharalingam&lt;/p&gt;
+
+&lt;h2 id=&quot;vice-president&quot;&gt;Vice President&lt;/h2&gt;
+&lt;p&gt;Amanda Sopkin&lt;/p&gt;
+
+&lt;h2 id=&quot;treasurer&quot;&gt;Treasurer&lt;/h2&gt;
+&lt;p&gt;Brian Wu&lt;/p&gt;
+
+&lt;h2 id=&quot;information-officers&quot;&gt;Information Officers&lt;/h2&gt;
+&lt;p&gt;Emily Dixon, Hunter Smith&lt;/p&gt;
+
+&lt;h2 id=&quot;events-officer&quot;&gt;Events Officer&lt;/h2&gt;
+&lt;p&gt;Michael Lin&lt;/p&gt;
+
+&lt;h2 id=&quot;webmaster&quot;&gt;Webmaster&lt;/h2&gt;
+&lt;p&gt;Joseph Milla&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Introducing Poole</title>
