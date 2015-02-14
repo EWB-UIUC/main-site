@@ -24,13 +24,24 @@
 // });
 
 $(document).ready(function() {
+  // var date = $('#calendar').fullCalendar('getDate').format('D');
+  var date = moment().format('D');
 
-    // page is now ready, initialize the calendar...
-
-    $('#calendar').fullCalendar({
-        // put your options and callbacks here
-    })
-
+  $('#calendar').fullCalendar({
+    header: {
+        left: 'title',
+        center: '',
+        right: 'prev today next'
+    },
+    googleCalendarApiKey: 'AIzaSyBrWdCHFwbNkPi9fXbN3f8w0fIrXfuHN2U',
+      events: {
+      googleCalendarId: 'lplaeaaetf890r2hkhdkv3cs7g@group.calendar.google.com'
+    },
+    eventAfterAllRender: function(view) {
+      $('.fc-state-highlight').html("<span class='highlighted-date'>" + date + "</span>");
+    }
+  });
+  $('.fc-state-highlight').html("<span class='highlighted-date'>" + date + "</span>");
 });
 
 $(function() {
