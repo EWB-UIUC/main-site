@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Introducing the 2015 Board Members
+title: Introducing 2015 Board Members
 ---
 
 ## President
 Ayzvara Suntharalingam
 
 ## Vice President
-Amanda Sopkin
+Amanda Sopkin, Arjun Kumar, Kevin Ger
 
 ## Treasurer
 Brian Wu
