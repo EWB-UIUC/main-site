@@ -19,20 +19,33 @@ title: Blog
     {% endfor %}
   </div>
 
-  <div class="pagination">
-    {% if paginator.next_page %}
-      <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
-    {% else %}
-      <span class="pagination-item older">Older</span>
-    {% endif %}
-    {% if paginator.previous_page %}
-      {% if paginator.page == 2 %}
-        <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
+  <center>
+    <div class="pagination">
+      {% if paginator.next_page %}
+        <a class="pagination-item older" href="{{ site.paginate_base }}page{{paginator.next_page}}" aria-label="Previous">
+          Prev
+        </a>
       {% else %}
-        <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
+        <span class="pagination-item older" aria-label="Previous">
+          Prev
+        </span>
       {% endif %}
-    {% else %}
-      <span class="pagination-item newer">Newer</span>
-    {% endif %}
-  </div>
+
+      {% if paginator.previous_page %}
+        {% if paginator.page == 2 %}
+          <a class="pagination-item newer" href="/blog" aria-label="Next">
+            Next
+          </a>
+        {% else %}
+          <a class="pagination-item newer" href="{{ site.paginate_base }}page{{paginator.previous_page}}" aria-label="Next">
+            Next
+          </a>
+        {% endif %}
+      {% else %}
+        <span class="pagination-item newer" aria-label="Next">
+          Next
+        </span>
+      {% endif %}
+    </div>
+  </center>
 </div>
