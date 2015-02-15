@@ -1,10 +1,7 @@
 ---
 layout: post
 title: Introducing the 2015 Board Members
-tag: board
 ---
-
-# 2015 Board
 
 ## President
 Ayzvara Suntharalingam

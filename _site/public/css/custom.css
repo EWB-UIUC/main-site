@@ -76,6 +76,15 @@ h1 .small, h2 .small, h3 .small, h4 .small, h5 .small, h6 .small,
   opacity: 0.80;
 }
 
+.caption {
+  margin-top: -40px;
+}
+
+.caption h4 {
+  font-size: 15px;
+  padding-top: 0px;
+}
+
 /**
 * Fullcalendar Customizations
 */
