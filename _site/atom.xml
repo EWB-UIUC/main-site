@@ -4,13 +4,27 @@
  <title>Engineers Without Borders</title>
  <link href="http://ewb-usa-uiuc.org//atom.xml" rel="self"/>
  <link href="http://ewb-usa-uiuc.org//"/>
- <updated>2015-02-15T11:12:02-06:00</updated>
+ <updated>2015-02-17T13:41:43-06:00</updated>
  <id>http://ewb-usa-uiuc.org/</id>
  <author>
    <name>Joseph Milla</name>
    <email>jmilla@acm.org</email>
  </author>
 
+ 
+ <entry>
+   <title>Guatemala Trip</title>
+   <link href="http://ewb-usa-uiuc.org///2015/02/17/guatemala-trip/"/>
+   <updated>2015-02-17T00:00:00-06:00</updated>
+   <id>http://ewb-usa-uiuc.org//2015/02/17/guatemala-trip</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/public/IMG_0001.JPG&quot; alt=&quot;Guatemala Trip&quot; /&gt;
+&lt;img src=&quot;/public/IMG_0002.JPG&quot; alt=&quot;Guatemala Trip&quot; /&gt;
+&lt;img src=&quot;/public/IMG_7705.JPG&quot; alt=&quot;Guatemala Trip&quot; /&gt;
+&lt;img src=&quot;/public/IMG_8015.JPG&quot; alt=&quot;Guatemala Trip&quot; /&gt;
+&lt;img src=&quot;/public/IMG_7949.JPG&quot; alt=&quot;Guatemala Trip&quot; /&gt;
+&lt;img src=&quot;/public/IMG_0003.JPG&quot; alt=&quot;Guatemala Trip&quot; /&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Introducing 2015 Board Members</title>
