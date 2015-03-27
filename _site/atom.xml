@@ -4,7 +4,7 @@
  <title>Engineers Without Borders</title>
  <link href="http://ewb-usa-uiuc.org//atom.xml" rel="self"/>
  <link href="http://ewb-usa-uiuc.org//"/>
- <updated>2015-03-27T08:58:39-05:00</updated>
+ <updated>2015-03-27T09:05:53-05:00</updated>
  <id>http://ewb-usa-uiuc.org/</id>
  <author>
    <name>Joseph Milla</name>
@@ -17,7 +17,9 @@
    <link href="http://ewb-usa-uiuc.org///2015/02/17/guatemala-trip/"/>
    <updated>2015-02-17T00:00:00-06:00</updated>
    <id>http://ewb-usa-uiuc.org//2015/02/17/guatemala-trip</id>
-   <content type="html">&lt;p&gt;&lt;img src=&quot;/public/IMG_0001.JPG&quot; alt=&quot;Guatemala Trip&quot; /&gt;
+   <content type="html">&lt;p&gt;Photo set from the Guatemala Trip:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/IMG_0001.JPG&quot; alt=&quot;Guatemala Trip&quot; /&gt;
 &lt;img src=&quot;/public/IMG_0002.JPG&quot; alt=&quot;Guatemala Trip&quot; /&gt;
 &lt;img src=&quot;/public/IMG_7705.JPG&quot; alt=&quot;Guatemala Trip&quot; /&gt;
 &lt;img src=&quot;/public/IMG_8015.JPG&quot; alt=&quot;Guatemala Trip&quot; /&gt;
