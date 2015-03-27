@@ -54,6 +54,21 @@ img {
   font-size: 20px;
 }
 
+.list-group-item-cursor {
+  cursor: pointer;
+}
+
+.list-group-item-cursor:hover,
+.list-group-item-cursor:focus {
+  opacity: 0.75;
+}
+
+.list-group-item-cursor:active {
+  opacity: 0.85;
+}
+
+
+
 /**
 * Typography
 */
