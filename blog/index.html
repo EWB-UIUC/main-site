@@ -2,33 +2,33 @@
 layout: default
 title: Blog
 ---
-<div class="jumbotron jumbotron-custom">
+<div class="jumbotron">
   <div class="posts">
     {% for post in paginator.posts %}
-    <article class="post">
-      <h1 class="post-title">
-        <a href="{{ post.url }}">
-          {{ post.title }}
-        </a>
-      </h1>
-
-      <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
-
-      {{ post.content }}
-    </article>
+      <div class="page-header">
+        <article class="post">
+          <h1 class="post-title"><b><a href="{{ post.url }}">{{ post.title }}</b></a></h1>
+          <h5><time datetime="{{ post.date | date_to_xmlschema }}" class="page-date">{{ post.date | date_to_string }}</time></h5>
+          <br>
+          {{ post.content }}
+          <br><br>
+        </article>
+      </div>
     {% endfor %}
   </div>
 
   <center>
     <div class="pagination">
       {% if paginator.next_page %}
-        <a class="pagination-item older" href="{{ site.paginate_base }}page{{paginator.next_page}}" aria-label="Previous">
+        <a href="{{ site.paginate_base }}page{{paginator.next_page}}" class="btn btn-default btn-fab btn-raised mdi-navigation-arrow-back" aria-label="Previous"></a>
+        <!-- <a class="pagination-item older" href="{{ site.paginate_base }}page{{paginator.next_page}}" aria-label="Previous">
           Prev
-        </a>
+        </a> -->
       {% else %}
-        <span class="pagination-item older" aria-label="Previous">
+        <span class="btn btn-default btn-fab btn-raised mdi-navigation-arrow-back" aria-label="Previous"></span>
+        <!-- <span class="pagination-item older" aria-label="Previous">
           Prev
-        </span>
+        </span> -->
       {% endif %}
 
       <!-- {% for i in (1..10) %}
@@ -39,18 +39,18 @@ title: Blog
 
       {% if paginator.previous_page %}
         {% if paginator.page == 2 %}
-          <a class="pagination-item newer" href="/blog" aria-label="Next">
+          <a href="/blog" class="btn btn-default btn-fab btn-raised mdi-navigation-arrow-forward" aria-label="Next"></a>
+          <!-- <a class="pagination-item newer" href="/blog" aria-label="Next">
             Next
-          </a>
+          </a> -->
         {% else %}
-          <a class="pagination-item newer" href="{{ site.paginate_base }}page{{paginator.previous_page}}" aria-label="Next">
+          <a href="{{ site.paginate_base }}page{{paginator.previous_page}}" class="btn btn-default btn-fab btn-raised mdi-navigation-arrow-forward" aria-label="Next"></a>
+          <!-- <a class="pagination-item newer" href="{{ site.paginate_base }}page{{paginator.previous_page}}" aria-label="Next">
             Next
-          </a>
+          </a> -->
         {% endif %}
       {% else %}
-        <span class="pagination-item newer" aria-label="Next">
-          Next
-        </span>
+        <span class="btn btn-default btn-fab btn-raised mdi-navigation-arrow-forward" aria-label="Next"></span>
       {% endif %}
     </div>
   </center>

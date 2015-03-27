@@ -1,0 +1,137 @@
+/** {
+  -webkit-font-smoothing: antialiased;
+}*/
+
+/*.body {
+  background: #eee;
+}*/
+
+/*#225378
+#1695A3
+#ACF0F2
+#F3FFE2
+#EB7F00*/
+
+a {
+  color: #008094;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none !important;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin: 0 0 1rem;
+  border-radius: 5px;
+  border: 0;
+}
+.section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.more:hover,
+.more:focus {
+  opacity: 0.75;
+}
+.more:active {
+  opacity: 0.85;
+}
+
+.related {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+#about {
+  padding-top: 130px;
+}
+
+.post-date {
+  float: right;
+  font-size: 20px;
+}
+
+/**
+* Typography
+*/
+
+h1 {
+  font-size: 56px;
+}
+
+h2 {
+  font-size: 45px;
+}
+
+h3 {
+  font-size: 34px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 16px;
+}
+
+/**
+* Fullcalendar Customizations
+*/
+.fc-button-group, .fc button {
+  display: inline;
+}
+.fc-event {
+  color: #333333 !important;
+  font-size: 12px !important;
+  background-color: #fecddd !important;
+  border: none;
+}
+
+.highlighted-date {
+  background-color: #fc3d39 !important;
+  background-size: 12px !important;
+  color: #FFFFFF !important;
+  border-radius: 50px;
+  padding: 3px !important;
+}
+
+.footer {
+  background-color: #333333;
+  color: #FFFFFF;
+  width: 100%;
+  height: 100px;
+  padding-top: 50px;
+}
+
+.fc-left h2 {
+  font-size: 34px;
+}
+
+@media (max-width: 48em) {
+  .footer {
+    height: 120px;
+    padding-top: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    height: 120px;
+    padding-top: 10px;
+  }
+}
+
+/**
+* Footer
+*/
+.footer a {
+  color: #FFFFFF;
+}

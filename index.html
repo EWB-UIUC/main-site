@@ -3,100 +3,159 @@ layout: default
 title: Home
 ---
 
-<div id="about" class="jumbotron jumbotron-custom">
+<div id="about" class="row section">
   <h1>About</h1>
-  Engineers Without Borders is an international organization which strives to develop bottom-up sustainable growth at the community level in the developing world. With over 12,000 members, and 350 projects in 45 different countries, EWB has had a profound impact on the lives of millions of people around the world. EWB-USA UIUC is one of the largest Engineers Without Borders student chapters in the USA. Founded in 2004, the chapter has grown to include three international programs in Nigeria, Guatemala and Cameroon, and over 150 active members. Although the projects constitute the heart and soul of our EWB vision, our chapter looks forward to future growth in many diverse areas. These include the development of new curriculae focused on international development through the College of Engineering, and the creation of chapter-wide workshops and training seminars. The bottom line? You don’t need to be an engineer to make a significant difference in our chapter!
-  <br>
-  <h2>Our Vision</h2>
-  A world in which the communities we serve have the capacity to sustainably meet their basic human needs, and where our members have enriched global perspectives through their interactions with EWB-USA initiatives.
+  <div class="jumbotron">
+    <h3>Who are we?</h3>
+    <p>Engineers Without Borders is an international organization which strives to develop bottom-up sustainable growth at the community level in the developing world. With over 12,000 members, and 350 projects in 45 different countries, EWB has had a profound impact on the lives of millions of people around the world. EWB-USA UIUC is one of the largest Engineers Without Borders student chapters in the USA. Founded in 2004, the chapter has grown to include three international programs in Nigeria, Guatemala and Cameroon, and over 150 active members. Although the projects constitute the heart and soul of our EWB vision, our chapter looks forward to future growth in many diverse areas. These include the development of new curriculae focused on international development through the College of Engineering, and the creation of chapter-wide workshops and training seminars. The bottom line? You don’t need to be an engineer to make a significant difference in our chapter!</p>
+    <br>
+    <h3>Our Vision</h3>
+    <p>A world in which the communities we serve have the capacity to sustainably meet their basic human needs, and where our members have enriched global perspectives through their interactions with EWB-USA initiatives.</p>
 
-  <br>
-  <h2>Our Mission</h2>
-Engineers Without Borders promotes community-driven engineering projects fostered by local partners for a sustainable global future. We foster leadership and personal growth within our student members through the transformative experiences embedded in our projects.
+    <br>
+    <h3>Our Mission</h3>
+    <p>Engineers Without Borders promotes community-driven engineering projects fostered by local partners for a sustainable global future. We foster leadership and personal growth within our student members through the transformative experiences embedded in our projects.</p>
 
-  <br>
-  <div class="page-header">
-    <h2>Our Projects</h2>
-  </div>
+    <br>
+    <div class="page-header">
+      <h3>Our Projects</h3>
+    </div>
 
-  <div class="row">
-    {% assign i = 0 %}
-    {% for page in site.pages %}
+    <div class="list-group">
+        {% assign i = 0 %}
+        {% for page in site.pages %}
 
-      {% if page.layout == "project" %}
-        {% assign i = i | plus:1 %}
-        <div class="col-sm-6 col-md-3">
-          <div class="thumbnail">
-            <img src="{{ site.baseurl }}{{ page.banner }}" alt="{{ page.title }}">
-            <div class="caption caption-custom">
-              <h3>{{ page.title_1 }} <br><small>{{ page.title_2 }}</small></h3>
-              <h4><span class="glyphicon glyphicon-map-marker"></span> {{ page.location }}</h4>
-              <p><a href="{{ site.baseurl }}{{ page.tag }}" class="btn btn-default" role="button">Learn More</a></p>
-            </div>
-          </div>
-        </div>
+          {% if page.layout == "project" %}
+            {% assign i = i | plus:1 %}
+            <a href="{{ site.baseurl }}{{ page.tag }}">
+              <div class="list-group-item">
+                  <div class="row-picture">
+                      <img class="circle" src="{{ site.baseurl }}{{ page.banner }}" alt="icon">
+                  </div>
+                  <div class="row-content">
+                      <div class="least-content">Active</div>
+                      <h4 class="list-group-item-heading">{{ page.title_1 }} {{ page.title_2 }}</h4>
+                      <p class="list-group-item-text" style="font-size: 14px;">{{ page.location }}</p>
+                  </div>
+              </div>
+              <div class="list-group-separator"></div>
+            </a>
 
-        {% if i > 4 and i % 4 == 0 %}
-          </div><div class="row">
-        {% endif %}
-      {% endif %}
-    {% endfor %}
+            {% if i > 4 and i % 4 == 0 %}
+              <div class="list-group-separator"></div>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+    </div>
   </div>
 </div>
 
-<div id="schedule" class="jumbotron jumbotron-custom">
+<div id="schedule" class="row section">
   <h1>Schedule</h1>
-  <!-- <iframe src="https://www.google.com/calendar/embed?src=lplaeaaetf890r2hkhdkv3cs7g%40group.calendar.google.com&ctz=America/Chicago" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe> -->
-  <br>
-  <div id="calendar"></div>
-</div>
-
-<div id="join" class="jumbotron jumbotron-custom">
-  <h1>Join</h1>
-  <!-- <h2>Engineers</h2>
-
-  Jill McClary- EWB President 2012 “I joined EWB during my freshman year because I wanted to use my education to make a difference.  By being involved in this organization throughout my four years at Illinois, I made some of my best college friends, learned how to manage and implement projects through real-world experiences, and discovered a passion for research that has significantly influenced my post-graduation professional plans.  Overall, EWB was a fantastic way to spend my undergraduate years, and I wouldn’t change a minute of it!”
-
-  <h2>Non-Engineers</h2>
-
-  Patrick Walsh- former EWB member, Founder of Greenlight Planet - “I was a physics major interested in basic science, not engineering, before I started working with Engineers Without Borders.  EWB forced us to confront realities of the developing world first hand.  We learned, often the hard way, what it takes to execute effective solutions to unfamiliar problems.    EWB was a transformative experience, and the perfect incubator for Greenlight Planet Inc., a company I created in college to offer a solar-powered alternative to kerosene lighting.  Five years later, millions of people in India and Africa use Greenlight’s solar lanterns.  EWB was the beginning.” -->
-
-  <!-- Change the width and height values to suit you best -->
-  <div class="typeform-widget" data-url="https://josephmilla.typeform.com/to/bhrwPB" data-text="EWB Registration" style="width:100%;height:600px;"></div>
-  <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
-
-</div>
-
-<div id="blog" class="jumbotron jumbotron-custom">
-  <h1>Blog</h1>
-  <h3>Latest blog posts</h3>
-  <div class="posts">
-    {% for post in site.posts limit:3 %}
-      <div class="post">
-        <h1 class="post-title">
-          <a href="{{ post.url }}">
-            {{ post.title }}
-          </a>
-        </h1>
-
-        <span class="post-date">{{ post.date | date_to_string }}</span>
-
-        {% if post.content.size > 30 %}
-          {{ post.content | strip_html | truncatewords: 30 }}
-        {% else %}
-          {{ post.content }}
-        {% endif %}
-      </div>
-    {% endfor %}
+  <div class="jumbotron">
+    <!-- <iframe src="https://www.google.com/calendar/embed?src=lplaeaaetf890r2hkhdkv3cs7g%40group.calendar.google.com&ctz=America/Chicago" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe> -->
+    <br>
+    <div id="calendar"></div>
   </div>
-  <h3><a href="{{ site.baseurl }}blog">See more</a></h3>
 </div>
 
-<div id="contact" class="jumbotron jumbotron-custom">
+<div id="join" class="row section">
+  <h1>Join</h1>
+  <div class="jumbotron jumbotron-custom">
+    <!-- Change the width and height values to suit you best -->
+    <div class="typeform-widget" data-url="https://josephmilla.typeform.com/to/bhrwPB" data-text="EWB Registration" style="width:100%;height:600px;"></div>
+    <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
+
+  </div>
+</div>
+
+<div id="blog" class="row section">
+  <h1>Blog</h1>
+  <div class="jumbotron">
+    <h3>Latest blog posts</h3>
+
+    <div class="container-fluid">
+      {% for post in site.posts limit:5 %}
+        <div class="row">
+          <div class="page-header">
+            <h4><b><a href="{{ post.url }}">{{ post.title }}</a></b> <span class="post-date">{{ post.date | date_to_string }}</span></h4>
+          </div>
+
+          <h5>
+          {% if post.content.size > 30 %}
+            {{ post.content | strip_html | truncatewords: 30 }}
+          {% elsif post.content.size > 0 %}
+            {{ post.content }}
+          {% else %}
+            Sorry there's no content here.
+          {% endif %}
+        </h5>
+        </div>
+      {% endfor %}
+      <br>
+      <div class="row"><h5><a href="{{ site.baseurl }}blog">See more</a></h5></div>
+    </div>
+  </div>
+</div>
+
+<div id="contact" class="row section">
   <h1>Contact</h1>
+  <div class="jumbotron">
+    <!-- <h2>Feel free to contact us at</h2>
+    <h3>hello@ewb-usa-uiuc.org</h3> -->
 
-  <h2>Feel free to contact us at</h2>
-  <h3>hello@ewb-usa-uiuc.org</h3>
+    <br>
+
+    <div class="row">
+      <div class="col-lg-6">
+        <form class="form-horizontal" action="https://getsimpleform.com/messages?form_api_token=ddc152b39ef81f20f00010b6ee0c252d" method="post">
+            <fieldset>
+                <div class="form-group">
+                    <label for="inputEmail" class="col-lg-2 control-label">First Name</label>
+                    <div class="col-lg-10">
+                        <input name="first_name" type="text" class="form-control" id="inputFirstName" placeholder="First Name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail" class="col-lg-2 control-label">Last Name</label>
+                    <div class="col-lg-10">
+                        <input name="last_name" type="text" class="form-control" id="inputLastName" placeholder="Last Name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+                    <div class="col-lg-10">
+                        <input name="email" type="email" class="form-control" id="inputEmail" placeholder="Email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="textArea" class="col-lg-2 control-label">Message</label>
+                    <div class="col-lg-10">
+                        <textarea name="message" type="text" class="form-control" rows="5" id="textArea"></textarea>
+                        <span class="help-block">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
+                    </div>
+                </div>
+                <center>
+                  <div class="form-group">
+                      <div class="col-lg-12">
+                          <button class="btn btn-default">Cancel</button>
+                          <button type="submit" class="btn btn-primary">Submit</button>
+                      </div>
+                  </div>
+                </center>
+            </fieldset>
+        </form>
+      </div>
+      <div class="col-lg-6">
+        <center>
+          <br><br><br><br><br>
+          <a href="mailto:hello@ewb-usa-uiuc.org?Subject=Hello%20there!" class="btn btn-default btn-fab btn-raised mdi-communication-email"></a>
+          <br>
+          <h3>You could also email us directly <a href="mailto:hello@ewb-usa-uiuc.org?Subject=Hello%20there!" target="_top">here</a></h3>
+          <br><br><br><br>
+        </center>
+      </div>
+    </div>
+  </div>
 </div>
-
 </center>

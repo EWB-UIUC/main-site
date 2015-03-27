@@ -42,6 +42,20 @@ $(document).ready(function() {
     }
   });
   $('.fc-state-highlight').html("<span class='highlighted-date'>" + date + "</span>");
+
+  $(document).scroll(function () {
+    var y = $(this).scrollTop();
+    // Show element after user scrolls past
+    // the top edge of its parent
+    $('.navbar-brand').each(function () {
+      var t = $('#about').offset().top - 100;  
+      if (y > t) {
+        $(this).fadeIn(150);
+      } else {
+        $(this).fadeOut(150);
+      }
+    });
+  });
 });
 
 $(function() {

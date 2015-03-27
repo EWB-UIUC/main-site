@@ -4,113 +4,49 @@
   {% include head.html %}
 
   <body data-spy="scroll" data-target=".navbar-collapse">
-    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
-      <div class="container-fluid container-fluid-custom">
-        <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar navbar-material-indigo navbar-fixed-top container-fluid">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <h3 class="masthead-title">
-            <a href="{{ site.baseurl }}" title="Home">{{ site.title }}</a>
-            <br>
-            <small>{{ site.tagline }}</small>
-            <br><br>
-          </h3>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{{ site.baseurl }}">{{ site.title }}</a>
         </div>
+        <div class="navbar-collapse collapse navbar-inverse-collapse">
+            <!-- <form class="navbar-form navbar-left">
+                <input type="text" class="form-control col-lg-8" placeholder="Search">
+            </form> -->
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            {% if page.title == "Home" %}
-              <li><a href="#about">About</a></li>
-              <li><a href="#schedule">Schedule</a></li>
-              <li><a href="#join">Join</a></li>
-              <li><a href="#blog">Blog</a></li>
-              <li><a href="#contact">Contact</a></li>
-            {% else %}
-              <li><a href="{{ site.baseurl}}#about">About</a></li>
-              <li><a href="{{ site.baseurl}}#schedule">Schedule</a></li>
-              <li><a href="{{ site.baseurl}}#join">Join</a></li>
-              <li><a href="{{ site.baseurl}}#blog">Blog</a></li>
-              <li><a href="{{ site.baseurl}}#contact">Contact</a></li>
-            {% endif%}
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
-
-    {% if page.title == "Home" %}
-      <style>
-        #main {
-          height: 850px;
-          background: url("{{ site.baseurl }}public/img/NVP_Cultural_Immersion.jpg") no-repeat center center fixed;
-          -webkit-background-size: cover;
-          -moz-background-size: cover;
-          -o-background-size: cover;
-          background-size: cover;
-          background-position: 50% 0%;
-          padding-top: 20%;
-          color: #FFFFFF;
-        }
-        @media (max-width: 48em) {
-          #main {
-            padding-top: 50%;
-          }
-          .container-fluid-custom {
-            padding-left: 25px;
-          }
-        }
-        body {
-          background: none;
-        }
-
-        #main h1, #main h2 {
-          color: #FFFFFF;
-        }
-      </style>
-      <div id="main">
-        <center>
-          <h1>Engineers Without Borders</h1>
-          <h2>University of Illinois at Urbana-Champaign Chapter</h2>
-          One of the largest Engineers Without Borders student chapters in the USA.
-          <br><br><br><br>
-          <a href="#about" class="more">
-            <!-- <span class="more">LEARN MORE</span>-->
-            <br><br><br>
-            <span class="glyphicon glyphicon-chevron-down" style="font-size: 2em;"></span>
-          </a>
-        </center>
-      </div>
-    {% endif %}
-
-    <div class="container content">
-      <main>
-        {{ content }}
-      </main>
+            <ul class="nav navbar-nav navbar-right">
+              {% if page.title == "Home" %}
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#schedule">SCHEDULE</a></li>
+                <li><a href="#join">JOIN</a></li>
+                <li><a href="#blog">BLOG</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+              {% else %}
+                <li><a href="{{ site.baseurl}}#about">ABOUT</a></li>
+                <li><a href="{{ site.baseurl}}#schedule">SCHEDULE</a></li>
+                <li><a href="{{ site.baseurl}}#join">JOIN</a></li>
+                <li><a href="{{ site.baseurl}}#blog">BLOG</a></li>
+                <li><a href="{{ site.baseurl}}#contact">CONTACT</a></li>
+              {% endif%}
+            </ul>
+        </div>
     </div>
 
-    <footer class="footer">
-      <div class="container">
-        <div class"row">
-          <div class="col-md-6">
-            <small>
-              &copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time> Engineers Without Borders - UIUC. All rights reserved.
-            </small>
-          </div>
-          <div class="col-md-3"></div>
-          <div class="col-md-3">
-            <small style="float: right;">
-              <a href="{{ site.baseurl }}board">Board</a> &nbsp; | &nbsp;
-              <a href="{{ site.baseurl }}sponsor">Sponsor</a>
-            </small>
-          </div>
+    {% if page.title == "Home" %}
+      {% include home.html %}
+    {% endif %}
+
+    <div class="container">
+      <div class="container-fluid">
+        <div class="row section">
+          {{ content }}
         </div>
       </div>
-    </footer>
+    </div>
 
     {% include foot.html %}
   </body>

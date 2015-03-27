@@ -37,11 +37,13 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/bower_components/bootstrap-material-design/dist/css/material.min.css">
+  <link rel="stylesheet" href="/bower_components/bootstrap-material-design/dist/css/material-fullpalette.min.css">
+  <link rel="stylesheet" href="/bower_components/bootstrap-material-design/dist/css/ripples.min.css">
+  <link rel="stylesheet" href="/bower_components/bootstrap-material-design/dist/css/roboto.min.css">
   <link rel="stylesheet" href="/bower_components/fullcalendar/dist/fullcalendar.min.css">
   <link rel="stylesheet" href="/bower_components/fullcalendar/dist/fullcalendar.print.css">
-  <link rel="stylesheet" href="/public/css/poole.css">
-  <link rel="stylesheet" href="/public/css/syntax.css">
-  <link rel="stylesheet" href="/public/css/custom.css">
+  <link rel="stylesheet" href="/public/css/style.css">
 
   <!-- Fonts -->
   <!-- <link href='http://fonts.googleapis.com/css?family=Lato:300,900' rel='stylesheet' type='text/css'>
@@ -54,261 +56,296 @@
 
 
   <body data-spy="scroll" data-target=".navbar-collapse">
-    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
-      <div class="container-fluid container-fluid-custom">
-        <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar navbar-material-indigo navbar-fixed-top container-fluid">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <h3 class="masthead-title">
-            <a href="/" title="Home">Engineers Without Borders</a>
-            <br>
-            <small>University of Illinois at Urbana-Champaign Chapter</small>
-            <br><br>
-          </h3>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Engineers Without Borders</a>
         </div>
+        <div class="navbar-collapse collapse navbar-inverse-collapse">
+            <!-- <form class="navbar-form navbar-left">
+                <input type="text" class="form-control col-lg-8" placeholder="Search">
+            </form> -->
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            
-              <li><a href="#about">About</a></li>
-              <li><a href="#schedule">Schedule</a></li>
-              <li><a href="#join">Join</a></li>
-              <li><a href="#blog">Blog</a></li>
-              <li><a href="#contact">Contact</a></li>
-            
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
+            <ul class="nav navbar-nav navbar-right">
+              
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#schedule">SCHEDULE</a></li>
+                <li><a href="#join">JOIN</a></li>
+                <li><a href="#blog">BLOG</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+              
+            </ul>
+        </div>
+    </div>
 
     
-      <style>
-        #main {
-          height: 850px;
-          background: url("/public/img/NVP_Cultural_Immersion.jpg") no-repeat center center fixed;
-          -webkit-background-size: cover;
-          -moz-background-size: cover;
-          -o-background-size: cover;
-          background-size: cover;
-          background-position: 50% 0%;
-          padding-top: 20%;
-          color: #FFFFFF;
-        }
-        @media (max-width: 48em) {
-          #main {
-            padding-top: 50%;
-          }
-          .container-fluid-custom {
-            padding-left: 25px;
-          }
-        }
-        body {
-          background: none;
-        }
+      <!-- <link rel="stylesheet" href="/public/css/home.css"> -->
+<style>
+#main {
+  height: 850px;
+  /*background: url("/public/img/NVP_Cultural_Immersion.jpg") no-repeat center center fixed;*/
+  /*background: #3f51b5;*/
+  background: #3f51b5;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 50% 0%;
+  padding-top: 20%;
+  color: #FFFFFF;
+}
+#main-img {
+  height: 600px;
+  background: url("/public/img/NVP_Cultural_Immersion.jpg");
+  margin-top: -100px;
+  z-index: 0;
+  position: relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 50% 0%;
+}
+@media (max-width: 48em) {
+  #main {
+    padding-top: 50%;
+  }
+  .container-fluid-custom {
+    padding-left: 25px;
+  }
+}
+body {
+  background: none;
+}
 
-        #main h1, #main h2 {
-          color: #FFFFFF;
-        }
-      </style>
-      <div id="main">
-        <center>
-          <h1>Engineers Without Borders</h1>
-          <h2>University of Illinois at Urbana-Champaign Chapter</h2>
-          One of the largest Engineers Without Borders student chapters in the USA.
-          <br><br><br><br>
-          <a href="#about" class="more">
-            <!-- <span class="more">LEARN MORE</span>-->
-            <br><br><br>
-            <span class="glyphicon glyphicon-chevron-down" style="font-size: 2em;"></span>
-          </a>
-        </center>
-      </div>
+#main h1, #main h2 {
+  color: #FFFFFF;
+}
+
+i {
+  color: #FFFFFF;
+}
+
+.navbar-brand {
+  display: none;
+}
+
+</style>
+
+<div id="main">
+  <!-- <center>
+    <h1>Engineers Without Borders</h1>
+    <h4>University of Illinois at Urbana-Champaign Chapter</h4>
+    <br><br><br><br>
+    <a href="#about" class="more">
+      <br><br><br>
+      <i class="mdi-navigation-expand-more" style="font-size: 50px;"></i>
+    </a>
+  </center> -->
+  <div class="container">
+    <h1>Engineers Without Borders</h1>
+    <div class="well well-lg" style="z-index: 1; position: relative;">
+      <h4>The University of Illinois at Urbana-Champaign Chapter is one of the largest Engineers Without Borders student chapters in the United States.</h4>
+    </div>
+  </div>
+
+  <div id="main-img" class="container-fluid">
+  </div>
+</div>
+
     
 
-    <div class="container content">
-      <main>
-        <div id="about" class="jumbotron jumbotron-custom">
+    <div class="container">
+      <div class="container-fluid">
+        <div class="row section">
+          <div id="about" class="row section">
   <h1>About</h1>
-  Engineers Without Borders is an international organization which strives to develop bottom-up sustainable growth at the community level in the developing world. With over 12,000 members, and 350 projects in 45 different countries, EWB has had a profound impact on the lives of millions of people around the world. EWB-USA UIUC is one of the largest Engineers Without Borders student chapters in the USA. Founded in 2004, the chapter has grown to include three international programs in Nigeria, Guatemala and Cameroon, and over 150 active members. Although the projects constitute the heart and soul of our EWB vision, our chapter looks forward to future growth in many diverse areas. These include the development of new curriculae focused on international development through the College of Engineering, and the creation of chapter-wide workshops and training seminars. The bottom line? You don’t need to be an engineer to make a significant difference in our chapter!
-  <br>
-  <h2>Our Vision</h2>
-  A world in which the communities we serve have the capacity to sustainably meet their basic human needs, and where our members have enriched global perspectives through their interactions with EWB-USA initiatives.
+  <div class="jumbotron">
+    <h3>Who are we?</h3>
+    <p>Engineers Without Borders is an international organization which strives to develop bottom-up sustainable growth at the community level in the developing world. With over 12,000 members, and 350 projects in 45 different countries, EWB has had a profound impact on the lives of millions of people around the world. EWB-USA UIUC is one of the largest Engineers Without Borders student chapters in the USA. Founded in 2004, the chapter has grown to include three international programs in Nigeria, Guatemala and Cameroon, and over 150 active members. Although the projects constitute the heart and soul of our EWB vision, our chapter looks forward to future growth in many diverse areas. These include the development of new curriculae focused on international development through the College of Engineering, and the creation of chapter-wide workshops and training seminars. The bottom line? You don’t need to be an engineer to make a significant difference in our chapter!</p>
+    <br>
+    <h3>Our Vision</h3>
+    <p>A world in which the communities we serve have the capacity to sustainably meet their basic human needs, and where our members have enriched global perspectives through their interactions with EWB-USA initiatives.</p>
 
-  <br>
-  <h2>Our Mission</h2>
-Engineers Without Borders promotes community-driven engineering projects fostered by local partners for a sustainable global future. We foster leadership and personal growth within our student members through the transformative experiences embedded in our projects.
+    <br>
+    <h3>Our Mission</h3>
+    <p>Engineers Without Borders promotes community-driven engineering projects fostered by local partners for a sustainable global future. We foster leadership and personal growth within our student members through the transformative experiences embedded in our projects.</p>
 
-  <br>
-  <div class="page-header">
-    <h2>Our Projects</h2>
-  </div>
+    <br>
+    <div class="page-header">
+      <h3>Our Projects</h3>
+    </div>
 
-  <div class="row">
-    
-    
-
-      
-    
-
-      
-    
-
-      
-    
-
-      
-    
-
-      
+    <div class="list-group">
         
-        <div class="col-sm-6 col-md-3">
-          <div class="thumbnail">
-            <img src="/public/IMG_8015.JPG" alt="Guatemala Water Project">
-            <div class="caption caption-custom">
-              <h3>Guatemala <br><small>Water Project</small></h3>
-              <h4><span class="glyphicon glyphicon-map-marker"></span> Chichimuch, Guatemala</h4>
-              <p><a href="/gwp" class="btn btn-default" role="button">Learn More</a></p>
-            </div>
-          </div>
-        </div>
-
         
-      
-    
 
-      
-    
-
-      
-    
-
-      
-    
-
-      
-        
-        <div class="col-sm-6 col-md-3">
-          <div class="thumbnail">
-            <img src="/public/img/NVP_School.jpg" alt="Nitisaw Village Partnership">
-            <div class="caption caption-custom">
-              <h3>Ntisaw <br><small>Village Partnership</small></h3>
-              <h4><span class="glyphicon glyphicon-map-marker"></span> Ntisaw, Cameroon</h4>
-              <p><a href="/nvp" class="btn btn-default" role="button">Learn More</a></p>
-            </div>
-          </div>
-        </div>
-
-        
-      
-    
-
-      
-        
-        <div class="col-sm-6 col-md-3">
-          <div class="thumbnail">
-            <img src="/public/img/NWP_Water_Tanks.jpg" alt="Nigeria Water Project">
-            <div class="caption caption-custom">
-              <h3>Nigeria <br><small>Water Project</small></h3>
-              <h4><span class="glyphicon glyphicon-map-marker"></span> Adu Achi, Nigeria</h4>
-              <p><a href="/nwp" class="btn btn-default" role="button">Learn More</a></p>
-            </div>
-          </div>
-        </div>
-
-        
-      
-    
-
-      
-        
-        <div class="col-sm-6 col-md-3">
-          <div class="thumbnail">
-            <img src="/public/img/NVP_Cultural_Immersion.jpg" alt="Soppo Likoko Electricity Project">
-            <div class="caption caption-custom">
-              <h3>Soppo Likoko <br><small>Electricity Project</small></h3>
-              <h4><span class="glyphicon glyphicon-map-marker"></span> Soppo Likoko, Cameroon</h4>
-              <p><a href="/slep" class="btn btn-default" role="button">Learn More</a></p>
-            </div>
-          </div>
-        </div>
-
-        
-      
-    
-
-      
-    
-
-      
-    
-  </div>
-</div>
-
-<div id="schedule" class="jumbotron jumbotron-custom">
-  <h1>Schedule</h1>
-  <!-- <iframe src="https://www.google.com/calendar/embed?src=lplaeaaetf890r2hkhdkv3cs7g%40group.calendar.google.com&ctz=America/Chicago" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe> -->
-  <br>
-  <div id="calendar"></div>
-</div>
-
-<div id="join" class="jumbotron jumbotron-custom">
-  <h1>Join</h1>
-  <!-- <h2>Engineers</h2>
-
-  Jill McClary- EWB President 2012 “I joined EWB during my freshman year because I wanted to use my education to make a difference.  By being involved in this organization throughout my four years at Illinois, I made some of my best college friends, learned how to manage and implement projects through real-world experiences, and discovered a passion for research that has significantly influenced my post-graduation professional plans.  Overall, EWB was a fantastic way to spend my undergraduate years, and I wouldn’t change a minute of it!”
-
-  <h2>Non-Engineers</h2>
-
-  Patrick Walsh- former EWB member, Founder of Greenlight Planet - “I was a physics major interested in basic science, not engineering, before I started working with Engineers Without Borders.  EWB forced us to confront realities of the developing world first hand.  We learned, often the hard way, what it takes to execute effective solutions to unfamiliar problems.    EWB was a transformative experience, and the perfect incubator for Greenlight Planet Inc., a company I created in college to offer a solar-powered alternative to kerosene lighting.  Five years later, millions of people in India and Africa use Greenlight’s solar lanterns.  EWB was the beginning.” -->
-
-  <!-- Change the width and height values to suit you best -->
-  <div class="typeform-widget" data-url="https://josephmilla.typeform.com/to/bhrwPB" data-text="EWB Registration" style="width:100%;height:600px;"></div>
-  <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
-
-</div>
-
-<div id="blog" class="jumbotron jumbotron-custom">
-  <h1>Blog</h1>
-  <h3>Latest blog posts</h3>
-  <div class="posts">
-    
-      <div class="post">
-        <h1 class="post-title">
-          <a href="/2015/02/17/guatemala-trip/">
-            Guatemala Trip
-          </a>
-        </h1>
-
-        <span class="post-date">17 Feb 2015</span>
-
-        
           
-
-
-
-
-
-
         
-      </div>
-    
-      <div class="post">
-        <h1 class="post-title">
-          <a href="/2015/01/19/introducing-2015-board/">
-            Introducing 2015 Board Members
-          </a>
-        </h1>
 
-        <span class="post-date">19 Jan 2015</span>
-
+          
         
-          President
+
+          
+        
+
+          
+        
+
+          
+            
+            <a href="/gwp">
+              <div class="list-group-item">
+                  <div class="row-picture">
+                      <img class="circle" src="/public/IMG_8015.JPG" alt="icon">
+                  </div>
+                  <div class="row-content">
+                      <div class="least-content">Active</div>
+                      <h4 class="list-group-item-heading">Guatemala Water Project</h4>
+                      <p class="list-group-item-text" style="font-size: 14px;">Chichimuch, Guatemala</p>
+                  </div>
+              </div>
+              <div class="list-group-separator"></div>
+            </a>
+
+            
+          
+        
+
+          
+        
+
+          
+        
+
+          
+        
+
+          
+            
+            <a href="/nvp">
+              <div class="list-group-item">
+                  <div class="row-picture">
+                      <img class="circle" src="/public/img/NVP_School.jpg" alt="icon">
+                  </div>
+                  <div class="row-content">
+                      <div class="least-content">Active</div>
+                      <h4 class="list-group-item-heading">Ntisaw Village Partnership</h4>
+                      <p class="list-group-item-text" style="font-size: 14px;">Ntisaw, Cameroon</p>
+                  </div>
+              </div>
+              <div class="list-group-separator"></div>
+            </a>
+
+            
+          
+        
+
+          
+            
+            <a href="/nwp">
+              <div class="list-group-item">
+                  <div class="row-picture">
+                      <img class="circle" src="/public/img/NWP_Water_Tanks.jpg" alt="icon">
+                  </div>
+                  <div class="row-content">
+                      <div class="least-content">Active</div>
+                      <h4 class="list-group-item-heading">Nigeria Water Project</h4>
+                      <p class="list-group-item-text" style="font-size: 14px;">Adu Achi, Nigeria</p>
+                  </div>
+              </div>
+              <div class="list-group-separator"></div>
+            </a>
+
+            
+          
+        
+
+          
+            
+            <a href="/slep">
+              <div class="list-group-item">
+                  <div class="row-picture">
+                      <img class="circle" src="/public/img/NVP_Cultural_Immersion.jpg" alt="icon">
+                  </div>
+                  <div class="row-content">
+                      <div class="least-content">Active</div>
+                      <h4 class="list-group-item-heading">Soppo Likoko Electricity Project</h4>
+                      <p class="list-group-item-text" style="font-size: 14px;">Soppo Likoko, Cameroon</p>
+                  </div>
+              </div>
+              <div class="list-group-separator"></div>
+            </a>
+
+            
+          
+        
+
+          
+        
+
+          
+        
+    </div>
+  </div>
+</div>
+
+<div id="schedule" class="row section">
+  <h1>Schedule</h1>
+  <div class="jumbotron">
+    <!-- <iframe src="https://www.google.com/calendar/embed?src=lplaeaaetf890r2hkhdkv3cs7g%40group.calendar.google.com&ctz=America/Chicago" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe> -->
+    <br>
+    <div id="calendar"></div>
+  </div>
+</div>
+
+<div id="join" class="row section">
+  <h1>Join</h1>
+  <div class="jumbotron jumbotron-custom">
+    <!-- Change the width and height values to suit you best -->
+    <div class="typeform-widget" data-url="https://josephmilla.typeform.com/to/bhrwPB" data-text="EWB Registration" style="width:100%;height:600px;"></div>
+    <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
+
+  </div>
+</div>
+
+<div id="blog" class="row section">
+  <h1>Blog</h1>
+  <div class="jumbotron">
+    <h3>Latest blog posts</h3>
+
+    <div class="container-fluid">
+      
+        <div class="row">
+          <div class="page-header">
+            <h4><b><a href="/2015/02/17/guatemala-trip/">Guatemala Trip</a></b> <span class="post-date">17 Feb 2015</span></h4>
+          </div>
+
+          <h5>
+          
+            
+
+
+
+
+
+
+          
+        </h5>
+        </div>
+      
+        <div class="row">
+          <div class="page-header">
+            <h4><b><a href="/2015/01/19/introducing-2015-board/">Introducing 2015 Board Members</a></b> <span class="post-date">19 Jan 2015</span></h4>
+          </div>
+
+          <h5>
+          
+            President
 Ayzvara Suntharalingam
 
 Vice President
@@ -326,61 +363,140 @@ Michael Lin
 Webmaster
 Joseph Milla
 
-        
-      </div>
-    
-      <div class="post">
-        <h1 class="post-title">
-          <a href="/2014/12/13/ewb-banquet/">
-            EWB Banquet
-          </a>
-        </h1>
+          
+        </h5>
+        </div>
+      
+        <div class="row">
+          <div class="page-header">
+            <h4><b><a href="/2014/12/13/ewb-banquet/">EWB Banquet</a></b> <span class="post-date">13 Dec 2014</span></h4>
+          </div>
 
-        <span class="post-date">13 Dec 2014</span>
+          <h5>
+          
+            The annual year-end banquet and awards ceremony was held on the 10th of December at the University YMCA. Both members and mentors alike had the opportunity to reflect on our...
+          
+        </h5>
+        </div>
+      
+        <div class="row">
+          <div class="page-header">
+            <h4><b><a href="/2014/11/22/travel-panel/">Travel Panel</a></b> <span class="post-date">22 Nov 2014</span></h4>
+          </div>
 
-        
-          The annual year-end banquet and awards ceremony was held on the 10th of December at the University YMCA. Both members and mentors alike had the opportunity to reflect on our...
-        
-      </div>
-    
+          <h5>
+          
+            Our general meeting was hosted on Tuesday November 18th at 6:00-7:00pm in MSEB100! We discussed about the general traveling process with regards to our international projects. Older members were able...
+          
+        </h5>
+        </div>
+      
+        <div class="row">
+          <div class="page-header">
+            <h4><b><a href="/2014/11/08/ewb-national-conference/">EWB National Conference</a></b> <span class="post-date">08 Nov 2014</span></h4>
+          </div>
+
+          <h5>
+          
+            The annual conference was hosted during the 31st October to 2nd November in Reston, Virginia! Participants managed to learn from informational sessions and insightful speakers regarding international development and service...
+          
+        </h5>
+        </div>
+      
+      <br>
+      <div class="row"><h5><a href="/blog">See more</a></h5></div>
+    </div>
   </div>
-  <h3><a href="/blog">See more</a></h3>
 </div>
 
-<div id="contact" class="jumbotron jumbotron-custom">
+<div id="contact" class="row section">
   <h1>Contact</h1>
+  <div class="jumbotron">
+    <!-- <h2>Feel free to contact us at</h2>
+    <h3>hello@ewb-usa-uiuc.org</h3> -->
 
-  <h2>Feel free to contact us at</h2>
-  <h3>hello@ewb-usa-uiuc.org</h3>
+    <br>
+
+    <div class="row">
+      <div class="col-lg-6">
+        <form class="form-horizontal" action="https://getsimpleform.com/messages?form_api_token=ddc152b39ef81f20f00010b6ee0c252d" method="post">
+            <fieldset>
+                <div class="form-group">
+                    <label for="inputEmail" class="col-lg-2 control-label">First Name</label>
+                    <div class="col-lg-10">
+                        <input name="first_name" type="text" class="form-control" id="inputFirstName" placeholder="First Name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail" class="col-lg-2 control-label">Last Name</label>
+                    <div class="col-lg-10">
+                        <input name="last_name" type="text" class="form-control" id="inputLastName" placeholder="Last Name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+                    <div class="col-lg-10">
+                        <input name="email" type="email" class="form-control" id="inputEmail" placeholder="Email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="textArea" class="col-lg-2 control-label">Message</label>
+                    <div class="col-lg-10">
+                        <textarea name="message" type="text" class="form-control" rows="5" id="textArea"></textarea>
+                        <span class="help-block">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
+                    </div>
+                </div>
+                <center>
+                  <div class="form-group">
+                      <div class="col-lg-12">
+                          <button class="btn btn-default">Cancel</button>
+                          <button type="submit" class="btn btn-primary">Submit</button>
+                      </div>
+                  </div>
+                </center>
+            </fieldset>
+        </form>
+      </div>
+      <div class="col-lg-6">
+        <center>
+          <br><br><br><br><br>
+          <a href="mailto:hello@ewb-usa-uiuc.org?Subject=Hello%20there!" class="btn btn-default btn-fab btn-raised mdi-communication-email"></a>
+          <br>
+          <h3>You could also email us directly <a href="mailto:hello@ewb-usa-uiuc.org?Subject=Hello%20there!" target="_top">here</a></h3>
+          <br><br><br><br>
+        </center>
+      </div>
+    </div>
+  </div>
 </div>
-
 </center>
 
-      </main>
+        </div>
+      </div>
     </div>
 
     <footer class="footer">
-      <div class="container">
-        <div class"row">
-          <div class="col-md-6">
-            <small>
-              &copy; <time datetime="2015-03-26T15:47:59-05:00">2015</time> Engineers Without Borders - UIUC. All rights reserved.
-            </small>
-          </div>
-          <div class="col-md-3"></div>
-          <div class="col-md-3">
-            <small style="float: right;">
-              <a href="/board">Board</a> &nbsp; | &nbsp;
-              <a href="/sponsor">Sponsor</a>
-            </small>
-          </div>
-        </div>
+  <div class="container-fluid">
+    <div class"row">
+      <div class="col-md-6">
+          &copy; <time datetime="2015-03-26T21:59:13-05:00">2015</time> Engineers Without Borders - UIUC. All rights reserved.
       </div>
-    </footer>
+      <div class="col-md-3"></div>
+      <div class="col-md-3">
+        <span style="float: right;">
+          <a href="/board">Board</a> &nbsp; | &nbsp;
+          <a href="/sponsor">Sponsor</a>
+        </span>
+      </div>
+    </div>
+  </div>
+</footer>
 
-    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/bower_components/jquery/dist/jquery.min.js"></script>
 <script src="/bower_components/jquery-ui/jquery-ui.min.js"></script>
 <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/bower_components/bootstrap-material-design/dist/js/material.min.js"></script>
+<script src="/bower_components/bootstrap-material-design/dist/js/ripples.min.js"></script>
 <script src="/bower_components/moment/moment.js"></script>
 <script src="/bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
 <script src="/public/js/onload.js"></script>

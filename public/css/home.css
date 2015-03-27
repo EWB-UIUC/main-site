@@ -1,0 +1,40 @@
+#main {
+  height: 850px;
+  /*background: url("{{ site.baseurl }}public/img/NVP_Cultural_Immersion.jpg") no-repeat center center fixed;*/
+  /*background: #3f51b5;*/
+  background: #3f51b5;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 50% 0%;
+  padding-top: 20%;
+  color: #FFFFFF;
+}
+#main-img {
+  height: 400px;
+  background: url("{{ site.baseurl }}public/img/NVP_Cultural_Immersion.jpg");
+}
+@media (max-width: 48em) {
+  #main {
+    padding-top: 50%;
+  }
+  .container-fluid-custom {
+    padding-left: 25px;
+  }
+}
+body {
+  background: none;
+}
+
+#main h1, #main h2 {
+  color: #FFFFFF;
+}
+
+i {
+  color: #FFFFFF;
+}
+
+.navbar-brand {
+  display: none;
+}

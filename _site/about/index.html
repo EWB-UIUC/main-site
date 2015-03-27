@@ -37,11 +37,13 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/bower_components/bootstrap-material-design/dist/css/material.min.css">
+  <link rel="stylesheet" href="/bower_components/bootstrap-material-design/dist/css/material-fullpalette.min.css">
+  <link rel="stylesheet" href="/bower_components/bootstrap-material-design/dist/css/ripples.min.css">
+  <link rel="stylesheet" href="/bower_components/bootstrap-material-design/dist/css/roboto.min.css">
   <link rel="stylesheet" href="/bower_components/fullcalendar/dist/fullcalendar.min.css">
   <link rel="stylesheet" href="/bower_components/fullcalendar/dist/fullcalendar.print.css">
-  <link rel="stylesheet" href="/public/css/poole.css">
-  <link rel="stylesheet" href="/public/css/syntax.css">
-  <link rel="stylesheet" href="/public/css/custom.css">
+  <link rel="stylesheet" href="/public/css/style.css">
 
   <!-- Fonts -->
   <!-- <link href='http://fonts.googleapis.com/css?family=Lato:300,900' rel='stylesheet' type='text/css'>
@@ -54,44 +56,38 @@
 
 
   <body data-spy="scroll" data-target=".navbar-collapse">
-    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
-      <div class="container-fluid container-fluid-custom">
-        <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar navbar-material-indigo navbar-fixed-top container-fluid">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <h3 class="masthead-title">
-            <a href="/" title="Home">Engineers Without Borders</a>
-            <br>
-            <small>University of Illinois at Urbana-Champaign Chapter</small>
-            <br><br>
-          </h3>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Engineers Without Borders</a>
         </div>
+        <div class="navbar-collapse collapse navbar-inverse-collapse">
+            <!-- <form class="navbar-form navbar-left">
+                <input type="text" class="form-control col-lg-8" placeholder="Search">
+            </form> -->
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            
-              <li><a href="/#about">About</a></li>
-              <li><a href="/#schedule">Schedule</a></li>
-              <li><a href="/#join">Join</a></li>
-              <li><a href="/#blog">Blog</a></li>
-              <li><a href="/#contact">Contact</a></li>
-            
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
+            <ul class="nav navbar-nav navbar-right">
+              
+                <li><a href="/#about">ABOUT</a></li>
+                <li><a href="/#schedule">SCHEDULE</a></li>
+                <li><a href="/#join">JOIN</a></li>
+                <li><a href="/#blog">BLOG</a></li>
+                <li><a href="/#contact">CONTACT</a></li>
+              
+            </ul>
+        </div>
+    </div>
 
     
 
-    <div class="container content">
-      <main>
-        <div class="jumbotron jumbotron-custom">
+    <div class="container">
+      <div class="container-fluid">
+        <div class="row section">
+          <div class="jumbotron">
   <article class="page">
     <h1 class="page-title">About</h1>
     <p>Engineers Without Borders is an international organization which strives to develop bottom-up sustainable growth at the community level in the developing world. With over 12,000 members, and 350 projects in 45 different countries, EWB has had a profound impact on the lives of millions of people around the world. EWB-USA UIUC is one of the largest Engineers Without Borders student chapters in the USA. Founded in 2004, the chapter has grown to include three international programs in Nigeria, Guatemala and Cameroon, and over 150 active members. Although the projects constitute the heart and soul of our EWB vision, our chapter looks forward to future growth in many diverse areas. These include the development of new curriculae focused on international development through the College of Engineering, and the creation of chapter-wide workshops and training seminars. The bottom line? You don’t need to be an engineer to make a significant difference in our chapter!</p>
@@ -105,31 +101,32 @@
   </article>
 </div>
 
-      </main>
+        </div>
+      </div>
     </div>
 
     <footer class="footer">
-      <div class="container">
-        <div class"row">
-          <div class="col-md-6">
-            <small>
-              &copy; <time datetime="2015-03-26T15:47:59-05:00">2015</time> Engineers Without Borders - UIUC. All rights reserved.
-            </small>
-          </div>
-          <div class="col-md-3"></div>
-          <div class="col-md-3">
-            <small style="float: right;">
-              <a href="/board">Board</a> &nbsp; | &nbsp;
-              <a href="/sponsor">Sponsor</a>
-            </small>
-          </div>
-        </div>
+  <div class="container-fluid">
+    <div class"row">
+      <div class="col-md-6">
+          &copy; <time datetime="2015-03-26T21:59:13-05:00">2015</time> Engineers Without Borders - UIUC. All rights reserved.
       </div>
-    </footer>
+      <div class="col-md-3"></div>
+      <div class="col-md-3">
+        <span style="float: right;">
+          <a href="/board">Board</a> &nbsp; | &nbsp;
+          <a href="/sponsor">Sponsor</a>
+        </span>
+      </div>
+    </div>
+  </div>
+</footer>
 
-    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/bower_components/jquery/dist/jquery.min.js"></script>
 <script src="/bower_components/jquery-ui/jquery-ui.min.js"></script>
 <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/bower_components/bootstrap-material-design/dist/js/material.min.js"></script>
+<script src="/bower_components/bootstrap-material-design/dist/js/ripples.min.js"></script>
 <script src="/bower_components/moment/moment.js"></script>
 <script src="/bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
 <script src="/public/js/onload.js"></script>

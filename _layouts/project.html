@@ -14,7 +14,7 @@ layout: default
   }
 </style>
 
-<div class="jumbotron jumbotron-custom">
+<div class="jumbotron">
   <h1>{{ page.title }}</h1>
   <div class="banner" width="100%" height="500"></div>
   <h1><small>{{ page.location}}</small></h1>
@@ -25,24 +25,30 @@ layout: default
   <iframe width="100%" height="450" frameborder="0" style="border:0; padding: 20px 0px 20px 0px;" src="https://www.google.com/maps/embed/v1/place?q={{ page.map }}&key=AIzaSyBrWdCHFwbNkPi9fXbN3f8w0fIrXfuHN2U"></iframe>
 
   {{ content }}
-  
+
   <h2>Blog</h2>
   <div class="posts">
-  {% for post in site.posts %}
-    {% if post.tag == page.tag %}
-      <div class="post">
-        <h1 class="post-title">
-          <a href="{{ post.url }}">
-            {{ post.title }}
-          </a>
-        </h1>
+    {% assign i = 0 %}
+    {% for post in site.posts %}
+      {% if post.tag == page.tag %}
+        {% assign i = i | plus:1 %}
+        <div class="page-header">
+          <article class="post">
+            <h1 class="post-title"><b><a href="{{ post.url }}">{{ post.title }}</b></a></h1>
+            <h5><time datetime="{{ post.date | date_to_xmlschema }}" class="page-date">{{ post.date | date_to_string }}</time></h5>
+            <br>
+            {{ post.content }}
+            <br><br>
+          </article>
+        </div>
+      {% endif %}
+    {% endfor %}
 
-        <span class="post-date">{{ post.date | date_to_string }}</span>
-
-        {{ post.content }}
-      </div>
+    {% if i == 0 %}
+    <div class="alert alert-dismissable alert-danger">
+      <button type="button" class="close" data-dismiss="alert">×</button>
+      <strong>Oh snap!</strong> <a href="javascript:void(0)" class="alert-link"></a> Sorry, there's no post here yet.
+    </div>
     {% endif %}
-  {% endfor %}
-</div>
-
+  </div>
 </div>

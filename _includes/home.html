@@ -1,0 +1,73 @@
+<!-- <link rel="stylesheet" href="{{ site.baseurl }}public/css/home.css"> -->
+<style>
+#main {
+  height: 850px;
+  /*background: url("{{ site.baseurl }}public/img/NVP_Cultural_Immersion.jpg") no-repeat center center fixed;*/
+  /*background: #3f51b5;*/
+  background: #3f51b5;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 50% 0%;
+  padding-top: 20%;
+  color: #FFFFFF;
+}
+#main-img {
+  height: 600px;
+  background: url("{{ site.baseurl }}public/img/NVP_Cultural_Immersion.jpg");
+  margin-top: -100px;
+  z-index: 0;
+  position: relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 50% 0%;
+}
+@media (max-width: 48em) {
+  #main {
+    padding-top: 50%;
+  }
+  .container-fluid-custom {
+    padding-left: 25px;
+  }
+}
+body {
+  background: none;
+}
+
+#main h1, #main h2 {
+  color: #FFFFFF;
+}
+
+i {
+  color: #FFFFFF;
+}
+
+.navbar-brand {
+  display: none;
+}
+
+</style>
+
+<div id="main">
+  <!-- <center>
+    <h1>Engineers Without Borders</h1>
+    <h4>University of Illinois at Urbana-Champaign Chapter</h4>
+    <br><br><br><br>
+    <a href="#about" class="more">
+      <br><br><br>
+      <i class="mdi-navigation-expand-more" style="font-size: 50px;"></i>
+    </a>
+  </center> -->
+  <div class="container">
+    <h1>Engineers Without Borders</h1>
+    <div class="well well-lg" style="z-index: 1; position: relative;">
+      <h4>The University of Illinois at Urbana-Champaign Chapter is one of the largest Engineers Without Borders student chapters in the United States.</h4>
+    </div>
+  </div>
+
+  <div id="main-img" class="container-fluid">
+  </div>
+</div>

@@ -37,11 +37,13 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/bower_components/bootstrap-material-design/dist/css/material.min.css">
+  <link rel="stylesheet" href="/bower_components/bootstrap-material-design/dist/css/material-fullpalette.min.css">
+  <link rel="stylesheet" href="/bower_components/bootstrap-material-design/dist/css/ripples.min.css">
+  <link rel="stylesheet" href="/bower_components/bootstrap-material-design/dist/css/roboto.min.css">
   <link rel="stylesheet" href="/bower_components/fullcalendar/dist/fullcalendar.min.css">
   <link rel="stylesheet" href="/bower_components/fullcalendar/dist/fullcalendar.print.css">
-  <link rel="stylesheet" href="/public/css/poole.css">
-  <link rel="stylesheet" href="/public/css/syntax.css">
-  <link rel="stylesheet" href="/public/css/custom.css">
+  <link rel="stylesheet" href="/public/css/style.css">
 
   <!-- Fonts -->
   <!-- <link href='http://fonts.googleapis.com/css?family=Lato:300,900' rel='stylesheet' type='text/css'>
@@ -54,44 +56,38 @@
 
 
   <body data-spy="scroll" data-target=".navbar-collapse">
-    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
-      <div class="container-fluid container-fluid-custom">
-        <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar navbar-material-indigo navbar-fixed-top container-fluid">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <h3 class="masthead-title">
-            <a href="/" title="Home">Engineers Without Borders</a>
-            <br>
-            <small>University of Illinois at Urbana-Champaign Chapter</small>
-            <br><br>
-          </h3>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Engineers Without Borders</a>
         </div>
+        <div class="navbar-collapse collapse navbar-inverse-collapse">
+            <!-- <form class="navbar-form navbar-left">
+                <input type="text" class="form-control col-lg-8" placeholder="Search">
+            </form> -->
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            
-              <li><a href="/#about">About</a></li>
-              <li><a href="/#schedule">Schedule</a></li>
-              <li><a href="/#join">Join</a></li>
-              <li><a href="/#blog">Blog</a></li>
-              <li><a href="/#contact">Contact</a></li>
-            
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
+            <ul class="nav navbar-nav navbar-right">
+              
+                <li><a href="/#about">ABOUT</a></li>
+                <li><a href="/#schedule">SCHEDULE</a></li>
+                <li><a href="/#join">JOIN</a></li>
+                <li><a href="/#blog">BLOG</a></li>
+                <li><a href="/#contact">CONTACT</a></li>
+              
+            </ul>
+        </div>
+    </div>
 
     
 
-    <div class="container content">
-      <main>
-        <style>
+    <div class="container">
+      <div class="container-fluid">
+        <div class="row section">
+          <style>
   .banner {
     height: 550px;
     background: url("/public/img/NWP_Water_Tanks.jpg");
@@ -103,7 +99,7 @@
   }
 </style>
 
-<div class="jumbotron jumbotron-custom">
+<div class="jumbotron">
   <h1>Nigeria Water Project</h1>
   <div class="banner" width="100%" height="500"></div>
   <h1><small>Adu Achi, Nigeria</small></h1>
@@ -114,55 +110,63 @@
   <iframe width="100%" height="450" frameborder="0" style="border:0; padding: 20px 0px 20px 0px;" src="https://www.google.com/maps/embed/v1/place?q=Achi,+Nigeria&key=AIzaSyBrWdCHFwbNkPi9fXbN3f8w0fIrXfuHN2U"></iframe>
 
   
-  
+
   <h2>Blog</h2>
   <div class="posts">
-  
     
-  
     
-  
+      
     
-  
+      
     
-  
+      
     
-  
+      
     
-  
+      
     
-  
+      
     
-  
+      
+    
+      
+    
+
+    
+    <div class="alert alert-dismissable alert-danger">
+      <button type="button" class="close" data-dismiss="alert">×</button>
+      <strong>Oh snap!</strong> <a href="javascript:void(0)" class="alert-link"></a> Sorry, there's no post here yet.
+    </div>
+    
+  </div>
 </div>
 
-</div>
-
-      </main>
+        </div>
+      </div>
     </div>
 
     <footer class="footer">
-      <div class="container">
-        <div class"row">
-          <div class="col-md-6">
-            <small>
-              &copy; <time datetime="2015-03-26T15:47:59-05:00">2015</time> Engineers Without Borders - UIUC. All rights reserved.
-            </small>
-          </div>
-          <div class="col-md-3"></div>
-          <div class="col-md-3">
-            <small style="float: right;">
-              <a href="/board">Board</a> &nbsp; | &nbsp;
-              <a href="/sponsor">Sponsor</a>
-            </small>
-          </div>
-        </div>
+  <div class="container-fluid">
+    <div class"row">
+      <div class="col-md-6">
+          &copy; <time datetime="2015-03-26T21:59:13-05:00">2015</time> Engineers Without Borders - UIUC. All rights reserved.
       </div>
-    </footer>
+      <div class="col-md-3"></div>
+      <div class="col-md-3">
+        <span style="float: right;">
+          <a href="/board">Board</a> &nbsp; | &nbsp;
+          <a href="/sponsor">Sponsor</a>
+        </span>
+      </div>
+    </div>
+  </div>
+</footer>
 
-    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/bower_components/jquery/dist/jquery.min.js"></script>
 <script src="/bower_components/jquery-ui/jquery-ui.min.js"></script>
 <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/bower_components/bootstrap-material-design/dist/js/material.min.js"></script>
+<script src="/bower_components/bootstrap-material-design/dist/js/ripples.min.js"></script>
 <script src="/bower_components/moment/moment.js"></script>
 <script src="/bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
 <script src="/public/js/onload.js"></script>

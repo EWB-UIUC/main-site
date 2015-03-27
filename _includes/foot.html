@@ -1,6 +1,25 @@
+<footer class="footer">
+  <div class="container-fluid">
+    <div class"row">
+      <div class="col-md-6">
+          &copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time> Engineers Without Borders - UIUC. All rights reserved.
+      </div>
+      <div class="col-md-3"></div>
+      <div class="col-md-3">
+        <span style="float: right;">
+          <a href="{{ site.baseurl }}board">Board</a> &nbsp; | &nbsp;
+          <a href="{{ site.baseurl }}sponsor">Sponsor</a>
+        </span>
+      </div>
+    </div>
+  </div>
+</footer>
+
 <script src="{{ site.baseurl }}bower_components/jquery/dist/jquery.min.js"></script>
 <script src="{{ site.baseurl }}bower_components/jquery-ui/jquery-ui.min.js"></script>
 <script src="{{ site.baseurl }}bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="{{ site.baseurl }}bower_components/bootstrap-material-design/dist/js/material.min.js"></script>
+<script src="{{ site.baseurl }}bower_components/bootstrap-material-design/dist/js/ripples.min.js"></script>
 <script src="{{ site.baseurl }}bower_components/moment/moment.js"></script>
 <script src="{{ site.baseurl }}bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
 <script src="{{ site.baseurl }}public/js/onload.js"></script>
