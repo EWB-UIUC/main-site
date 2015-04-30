@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Guatemala Trip
+title: Guatemala Trip 2015
 tag: gwp
 ---
 
