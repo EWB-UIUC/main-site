@@ -4,7 +4,7 @@
  <title>Engineers Without Borders</title>
  <link href="http://ewb-usa-uiuc.org//atom.xml" rel="self"/>
  <link href="http://ewb-usa-uiuc.org//"/>
- <updated>2015-04-30T18:10:05-05:00</updated>
+ <updated>2015-04-30T18:33:14-05:00</updated>
  <id>http://ewb-usa-uiuc.org/</id>
  <author>
    <name>Joseph Milla</name>
@@ -31,6 +31,17 @@
    <content type="html">&lt;p&gt;&lt;img src=&quot;/public/img/2015/03/IMG_0001.JPG&quot; alt=&quot;Water Testing&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The above picture shows the water quality testing procedure. The water samples from various sources were stored in plastic tubes until they were ready for testing. The second picture above shows the coliform and e-coli counting procedure.  After an incubation period we counted the number of colonies present in each plate.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Local School in Chichimuch</title>
+   <link href="http://ewb-usa-uiuc.org///2015/03/24/local-school-in-chichimuch/"/>
+   <updated>2015-03-24T00:00:00-05:00</updated>
+   <id>http://ewb-usa-uiuc.org//2015/03/24/local-school-in-chichimuch</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/public/img/2015/03/IMG_0003.JPG&quot; alt=&quot;Local School in Chichimuch&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Today our team visited the local school in Chichimuch.  During our visit we ran tests on the filters in the school and gave a presentation to some of the kids.  In this picture you can see the team showing one of the classes a short animation in Spanish about sanitation and hygiene. This animation was created by a University of Illinois organization called SAWBO (Scientific Animations Without Borders) that makes various free animations with numerous translations of local languages.&lt;/p&gt;
 </content>
  </entry>
  
