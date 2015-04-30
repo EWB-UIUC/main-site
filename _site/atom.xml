@@ -4,7 +4,7 @@
  <title>Engineers Without Borders</title>
  <link href="http://ewb-usa-uiuc.org//atom.xml" rel="self"/>
  <link href="http://ewb-usa-uiuc.org//"/>
- <updated>2015-04-30T17:59:29-05:00</updated>
+ <updated>2015-04-30T18:10:05-05:00</updated>
  <id>http://ewb-usa-uiuc.org/</id>
  <author>
    <name>Joseph Milla</name>
@@ -13,10 +13,32 @@
 
  
  <entry>
-   <title>Guatemala Trip 2015</title>
-   <link href="http://ewb-usa-uiuc.org///2015/03/21/guatemala-trip-2015/"/>
+   <title>PVC Pipes</title>
+   <link href="http://ewb-usa-uiuc.org///2015/03/26/pipes/"/>
+   <updated>2015-03-26T00:00:00-05:00</updated>
+   <id>http://ewb-usa-uiuc.org//2015/03/26/pipes</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/public/img/2015/03/IMG_0002.JPG&quot; alt=&quot;PVC Pipes&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Joe is pictured above setting up the PVC pipe to allow us to determine the amount of water that could be provided by the potential new source. We had to clear away sediment and even use a glove to prevent water from seeping through the mini-dam we built. We recorded the time it took to fill a Nalgene bottle to calculate the flow rate.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Water Testing</title>
+   <link href="http://ewb-usa-uiuc.org///2015/03/25/water-testing/"/>
+   <updated>2015-03-25T00:00:00-05:00</updated>
+   <id>http://ewb-usa-uiuc.org//2015/03/25/water-testing</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/public/img/2015/03/IMG_0001.JPG&quot; alt=&quot;Water Testing&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The above picture shows the water quality testing procedure. The water samples from various sources were stored in plastic tubes until they were ready for testing. The second picture above shows the coliform and e-coli counting procedure.  After an incubation period we counted the number of colonies present in each plate.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Photospheres</title>
+   <link href="http://ewb-usa-uiuc.org///2015/03/21/photospheres/"/>
    <updated>2015-03-21T00:00:00-05:00</updated>
-   <id>http://ewb-usa-uiuc.org//2015/03/21/guatemala-trip-2015</id>
+   <id>http://ewb-usa-uiuc.org//2015/03/21/photospheres</id>
    <content type="html">&lt;p&gt;Photospheres:&lt;/p&gt;
 
 &lt;iframe src=&quot;https://www.google.com/maps/embed?pb=!1m0!3m2!1sen!2sus!4v1430432009493!6m8!1m7!1stL8eIJ2A1uQAAAQfDObcAg!2m2!1d14.770522!2d-91.266238!3f185.74!4f12.780000000000001!5f0.7820865974627469&quot; width=&quot;100%&quot; height=&quot;450&quot; frameborder=&quot;0&quot; style=&quot;border:0&quot;&gt;&lt;/iframe&gt;
