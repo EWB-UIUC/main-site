@@ -4,6 +4,8 @@ title: Daily Bailey Blog, May 22 Friday
 tag: nvp
 ---
 
+![Daily Bailey Blog]({{ site.baseurl }}public/img/2015/05/IMG_6990.JPG)
+
 This morning we started off the day with a village meeting. At all of these meetings we use Pastor Julius as our translator. The Water Chairman started of the meeting saying that it was a very busy day and that they would keep the meeting short. Afterwards that made me laugh because the meeting lasted three hours. It was an interesting experience to sit there during the meeting in a place of honor and yet feel so separate from it. They all discussed for a few hours until we finally had a chance to speak. But that entire time previous we didn’t have a clue what they were saying. They best we could do was to try to read what people were saying by their tone and body language.
 
 At the meeting we discussed private taps, maintenance problems, key holders, the celebration that we were planning, and the developing library. All in all, the meeting went well and afterwards we went to Salema to discuss many of the same things with the women of the village.
